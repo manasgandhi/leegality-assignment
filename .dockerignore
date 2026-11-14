@@ -1,0 +1,19 @@
+__pycache__
+*.pyc
+.ruff_cache
+.coverage
+
+# Virtual environments
+venv
+.venv
+README.md
+
+# Environment
+.env
+
+# System files
+.DS_Store
+
+# Git
+.git
+.gitignore
