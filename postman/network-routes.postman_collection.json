@@ -1,0 +1,3420 @@
+{
+  "info": {
+    "name": "Network Routes API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nodes",
+      "item": [
+        {
+          "name": "Create node ServerA",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/nodes",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "nodes"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (201 Created)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/nodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "nodes"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"ServerA\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "25"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"id\": 1,\n  \"name\": \"ServerA\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create node ServerB",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/nodes",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "nodes"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (201 Created)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/nodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "nodes"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"ServerB\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "25"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"id\": 2,\n  \"name\": \"ServerB\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create node ServerC",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/nodes",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "nodes"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (201 Created)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/nodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "nodes"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"ServerC\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "25"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"id\": 3,\n  \"name\": \"ServerC\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create node ServerD",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/nodes",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "nodes"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (201 Created)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/nodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "nodes"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"ServerD\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "25"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"id\": 4,\n  \"name\": \"ServerD\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create node duplicate name",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/nodes",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "nodes"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/nodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "nodes"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"ServerA\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "48"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"name\": [\n    \"node with this name already exists.\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create node blank name",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/nodes",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "nodes"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/nodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "nodes"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "41"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"name\": [\n    \"This field may not be blank.\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create node missing name",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/nodes",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "nodes"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/nodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "nodes"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "36"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"name\": [\n    \"This field is required.\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "List nodes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/nodes",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "nodes"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (200 OK)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/nodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "nodes"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "125"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"count\": 4,\n  \"nodes\": [\n    {\n      \"id\": 1,\n      \"name\": \"ServerA\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"ServerB\"\n    },\n    {\n      \"id\": 3,\n      \"name\": \"ServerC\"\n    },\n    {\n      \"id\": 4,\n      \"name\": \"ServerD\"\n    }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "List nodes page size 2",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/nodes?page_size=2",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "nodes"
+              ],
+              "query": [
+                {
+                  "key": "page_size",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (200 OK)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/nodes?page_size=2",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "nodes"
+                  ],
+                  "query": [
+                    {
+                      "key": "page_size",
+                      "value": "2"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "73"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"count\": 4,\n  \"nodes\": [\n    {\n      \"id\": 1,\n      \"name\": \"ServerA\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"ServerB\"\n    }\n  ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Edges",
+      "item": [
+        {
+          "name": "Create edge ServerA to ServerB",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/edges",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (201 Created)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/edges",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\",\n  \"destination\": \"ServerB\",\n  \"latency\": 10\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "66"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"id\": 1,\n  \"source\": \"ServerA\",\n  \"destination\": \"ServerB\",\n  \"latency\": 10.0\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create edge ServerB to ServerD",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/edges",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (201 Created)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/edges",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerB\",\n  \"destination\": \"ServerD\",\n  \"latency\": 13.4\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "66"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"id\": 2,\n  \"source\": \"ServerB\",\n  \"destination\": \"ServerD\",\n  \"latency\": 13.4\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create edge ServerA to ServerC",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/edges",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (201 Created)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/edges",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\",\n  \"destination\": \"ServerC\",\n  \"latency\": 4\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "65"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"id\": 3,\n  \"source\": \"ServerA\",\n  \"destination\": \"ServerC\",\n  \"latency\": 4.0\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create edge ServerC to ServerD",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/edges",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (201 Created)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/edges",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerC\",\n  \"destination\": \"ServerD\",\n  \"latency\": 20\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "66"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"id\": 4,\n  \"source\": \"ServerC\",\n  \"destination\": \"ServerD\",\n  \"latency\": 20.0\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create edge duplicate",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/edges",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/edges",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\",\n  \"destination\": \"ServerB\",\n  \"latency\": 3\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "79"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"non_field_errors\": [\n    \"The fields source, destination must make a unique set.\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create edge self loop",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/edges",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/edges",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\",\n  \"destination\": \"ServerA\",\n  \"latency\": 3\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "65"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"non_field_errors\": [\n    \"Source and destination must be different\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create edge unknown node",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/edges",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/edges",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\",\n  \"destination\": \"Nope\",\n  \"latency\": 3\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "57"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"destination\": [\n    \"Object with name=Nope does not exist.\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create edge zero latency",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/edges",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/edges",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\",\n  \"destination\": \"ServerD\",\n  \"latency\": 0\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "46"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"latency\": [\n    \"Latency must be greater than 0\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create edge negative latency",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/edges",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/edges",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\",\n  \"destination\": \"ServerD\",\n  \"latency\": -2\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "46"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"latency\": [\n    \"Latency must be greater than 0\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create edge missing latency",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/edges",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/edges",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\",\n  \"destination\": \"ServerD\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "39"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"latency\": [\n    \"This field is required.\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "List edges",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/edges",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (200 OK)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/edges",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:02 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "288"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"count\": 4,\n  \"edges\": [\n    {\n      \"id\": 1,\n      \"source\": \"ServerA\",\n      \"destination\": \"ServerB\",\n      \"latency\": 10.0\n    },\n    {\n      \"id\": 2,\n      \"source\": \"ServerB\",\n      \"destination\": \"ServerD\",\n      \"latency\": 13.4\n    },\n    {\n      \"id\": 3,\n      \"source\": \"ServerA\",\n      \"destination\": \"ServerC\",\n      \"latency\": 4.0\n    },\n    {\n      \"id\": 4,\n      \"source\": \"ServerC\",\n      \"destination\": \"ServerD\",\n      \"latency\": 20.0\n    }\n  ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Routes",
+      "item": [
+        {
+          "name": "Shortest route A to D",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/routes/shortest",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "routes",
+                "shortest"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (200 OK)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/routes/shortest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "routes",
+                    "shortest"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\",\n  \"destination\": \"ServerD\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "61"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"total_latency\": 23.4,\n  \"path\": [\n    \"ServerA\",\n    \"ServerB\",\n    \"ServerD\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Shortest route A to D again",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/routes/shortest",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "routes",
+                "shortest"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (200 OK)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/routes/shortest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "routes",
+                    "shortest"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\",\n  \"destination\": \"ServerD\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "61"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"total_latency\": 23.4,\n  \"path\": [\n    \"ServerA\",\n    \"ServerB\",\n    \"ServerD\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Shortest route D to A no path",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/routes/shortest",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "routes",
+                "shortest"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (404 Not Found)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/routes/shortest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "routes",
+                    "shortest"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerD\",\n  \"destination\": \"ServerA\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "54"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"error\": \"No path exists between ServerD and ServerA\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Shortest route same node",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/routes/shortest",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "routes",
+                "shortest"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (200 OK)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/routes/shortest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "routes",
+                    "shortest"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\",\n  \"destination\": \"ServerA\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "40"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"total_latency\": 0.0,\n  \"path\": [\n    \"ServerA\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Shortest route unknown node",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/routes/shortest",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "routes",
+                "shortest"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/routes/shortest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "routes",
+                    "shortest"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\",\n  \"destination\": \"Nope\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "57"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"destination\": [\n    \"Object with name=Nope does not exist.\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Shortest route missing field",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/routes/shortest",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "routes",
+                "shortest"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/routes/shortest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "routes",
+                    "shortest"
+                  ]
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"source\": \"ServerA\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "43"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"destination\": [\n    \"This field is required.\"\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Route history",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/routes/history",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "routes",
+                "history"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (200 OK)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/routes/history",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "routes",
+                    "history"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "473"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"count\": 3,\n  \"route_queries\": [\n    {\n      \"id\": 3,\n      \"source\": \"ServerA\",\n      \"destination\": \"ServerA\",\n      \"total_latency\": 0.0,\n      \"path\": [\n        \"ServerA\"\n      ],\n      \"created_at\": \"2026-11-15T17:56:03.036642Z\"\n    },\n    {\n      \"id\": 2,\n      \"source\": \"ServerA\",\n      \"destination\": \"ServerD\",\n      \"total_latency\": 23.4,\n      \"path\": [\n        \"ServerA\",\n        \"ServerB\",\n        \"ServerD\"\n      ],\n      \"created_at\": \"2026-11-15T17:56:03.016085Z\"\n    },\n    {\n      \"id\": 1,\n      \"source\": \"ServerA\",\n      \"destination\": \"ServerD\",\n      \"total_latency\": 23.4,\n      \"path\": [\n        \"ServerA\",\n        \"ServerB\",\n        \"ServerD\"\n      ],\n      \"created_at\": \"2026-11-15T17:56:03.004161Z\"\n    }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Route history filtered",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/routes/history?source=ServerA&destination=ServerD",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "routes",
+                "history"
+              ],
+              "query": [
+                {
+                  "key": "source",
+                  "value": "ServerA"
+                },
+                {
+                  "key": "destination",
+                  "value": "ServerD"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (200 OK)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/routes/history?source=ServerA&destination=ServerD",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "routes",
+                    "history"
+                  ],
+                  "query": [
+                    {
+                      "key": "source",
+                      "value": "ServerA"
+                    },
+                    {
+                      "key": "destination",
+                      "value": "ServerD"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "339"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"count\": 2,\n  \"route_queries\": [\n    {\n      \"id\": 2,\n      \"source\": \"ServerA\",\n      \"destination\": \"ServerD\",\n      \"total_latency\": 23.4,\n      \"path\": [\n        \"ServerA\",\n        \"ServerB\",\n        \"ServerD\"\n      ],\n      \"created_at\": \"2026-11-15T17:56:03.016085Z\"\n    },\n    {\n      \"id\": 1,\n      \"source\": \"ServerA\",\n      \"destination\": \"ServerD\",\n      \"total_latency\": 23.4,\n      \"path\": [\n        \"ServerA\",\n        \"ServerB\",\n        \"ServerD\"\n      ],\n      \"created_at\": \"2026-11-15T17:56:03.004161Z\"\n    }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Route history date range",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/routes/history?date_from=2020-01-01&date_to=2099-12-31",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "routes",
+                "history"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "2020-01-01"
+                },
+                {
+                  "key": "date_to",
+                  "value": "2099-12-31"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (200 OK)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/routes/history?date_from=2020-01-01&date_to=2099-12-31",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "routes",
+                    "history"
+                  ],
+                  "query": [
+                    {
+                      "key": "date_from",
+                      "value": "2020-01-01"
+                    },
+                    {
+                      "key": "date_to",
+                      "value": "2099-12-31"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "473"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"count\": 3,\n  \"route_queries\": [\n    {\n      \"id\": 3,\n      \"source\": \"ServerA\",\n      \"destination\": \"ServerA\",\n      \"total_latency\": 0.0,\n      \"path\": [\n        \"ServerA\"\n      ],\n      \"created_at\": \"2026-11-15T17:56:03.036642Z\"\n    },\n    {\n      \"id\": 2,\n      \"source\": \"ServerA\",\n      \"destination\": \"ServerD\",\n      \"total_latency\": 23.4,\n      \"path\": [\n        \"ServerA\",\n        \"ServerB\",\n        \"ServerD\"\n      ],\n      \"created_at\": \"2026-11-15T17:56:03.016085Z\"\n    },\n    {\n      \"id\": 1,\n      \"source\": \"ServerA\",\n      \"destination\": \"ServerD\",\n      \"total_latency\": 23.4,\n      \"path\": [\n        \"ServerA\",\n        \"ServerB\",\n        \"ServerD\"\n      ],\n      \"created_at\": \"2026-11-15T17:56:03.004161Z\"\n    }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Route history page size 1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/routes/history?page_size=1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "routes",
+                "history"
+              ],
+              "query": [
+                {
+                  "key": "page_size",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (200 OK)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/routes/history?page_size=1",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "routes",
+                    "history"
+                  ],
+                  "query": [
+                    {
+                      "key": "page_size",
+                      "value": "1"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "163"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"count\": 3,\n  \"route_queries\": [\n    {\n      \"id\": 3,\n      \"source\": \"ServerA\",\n      \"destination\": \"ServerA\",\n      \"total_latency\": 0.0,\n      \"path\": [\n        \"ServerA\"\n      ],\n      \"created_at\": \"2026-11-15T17:56:03.036642Z\"\n    }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Route history bad date",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/routes/history?date_from=yesterday",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "routes",
+                "history"
+              ],
+              "query": [
+                {
+                  "key": "date_from",
+                  "value": "yesterday"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/routes/history?date_from=yesterday",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "routes",
+                    "history"
+                  ],
+                  "query": [
+                    {
+                      "key": "date_from",
+                      "value": "yesterday"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "127"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"date_from\": [\n    \"Datetime has wrong format. Use one of these formats instead: YYYY-MM-DDThh:mm[:ss[.uuuuuu]][+HH:MM|-HH:MM|Z].\"\n  ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cleanup",
+      "item": [
+        {
+          "name": "Delete node with edges blocked",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/nodes/{{nodeAId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "nodes",
+                "{{nodeAId}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (400 Bad Request)",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/nodes/{{nodeAId}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "nodes",
+                    "{{nodeAId}}"
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "DELETE, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "45"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"error\": \"Node has edges, delete them first\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete node non-numeric id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/nodes/abc",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "nodes",
+                "abc"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (404 Not Found)",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/nodes/abc",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "nodes",
+                    "abc"
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "html",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/html; charset=utf-8"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "179"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "\n<!doctype html>\n<html lang=\"en\">\n<head>\n  <title>Not Found</title>\n</head>\n<body>\n  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>\n</body>\n</html>\n"
+            }
+          ]
+        },
+        {
+          "name": "Delete edge A to B",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/edges/{{edgeABId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges",
+                "{{edgeABId}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success (204 No Content)",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/edges/{{edgeABId}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges",
+                    "{{edgeABId}}"
+                  ]
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": "text",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "DELETE, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "Delete edge again not found",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/edges/{{edgeABId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "edges",
+                "{{edgeABId}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Failure (404 Not Found)",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/edges/{{edgeABId}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "edges",
+                    "{{edgeABId}}"
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 15 Nov 2026 17:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.12.15"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, Cookie"
+                },
+                {
+                  "key": "Allow",
+                  "value": "DELETE, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "27"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"error\": \"Edge not found!\"\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8000/api"
+    },
+    {
+      "key": "nodeAId",
+      "value": "1"
+    },
+    {
+      "key": "nodeBId",
+      "value": "2"
+    },
+    {
+      "key": "nodeCId",
+      "value": "3"
+    },
+    {
+      "key": "nodeDId",
+      "value": "4"
+    },
+    {
+      "key": "edgeABId",
+      "value": "1"
+    }
+  ]
+}
