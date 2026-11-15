@@ -25,6 +25,21 @@ class ShortestRouteViewTestCase(APITestCase):
         self.assertEqual(response.data["path"], ["ServerA", "ServerB", "ServerD"])
         self.assertEqual(RouteQuery.objects.count(), 1)
 
+    def test_shortest_route_no_path(self):
+        data = {"source": "ServerD", "destination": "ServerA"}
+        response = self.client.post(reverse("shortest-route"), data)
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+        self.assertEqual(
+            response.data["error"], "No path exists between ServerD and ServerA"
+        )
+        self.assertEqual(RouteQuery.objects.count(), 0)
+
+    def test_shortest_route_unknown_node(self):
+        data = {"source": "ServerA", "destination": "Nope"}
+        response = self.client.post(reverse("shortest-route"), data)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(RouteQuery.objects.count(), 0)
+
 
 class RouteHistoryViewTestCase(APITestCase):
     @classmethod
@@ -52,3 +67,8 @@ class RouteHistoryViewTestCase(APITestCase):
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["count"], 2)
+
+    def test_history_invalid_date(self):
+        response = self.client.get(reverse("route-history"), {"date_from": "yesterday"})
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("date_from", response.data)
