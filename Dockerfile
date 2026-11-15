@@ -19,4 +19,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 8000
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["gunicorn", "network_root.wsgi:application", \
+     "--bind", "0.0.0.0:8000", \
+     "--access-logfile", "-", \
+     "--error-logfile", "-"]
