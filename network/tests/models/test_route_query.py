@@ -15,4 +15,4 @@ class RouteQueryModelTestCase(TestCase):
         self.assertEqual(RouteQuery.objects.count(), 1)
         self.assertEqual(route_query.total_latency, 23.4)
         self.assertEqual(route_query.path, ["ServerA", "ServerB", "ServerC"])
-        self.assertIsNotNone(route_query.created_on)
+        self.assertIsNotNone(route_query.created_at)
