@@ -30,7 +30,7 @@ services:
       - DB_HOST=db
       - DB_PORT=5432
     healthcheck:
-      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health_check/')"]
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health_check/')"]
       interval: 10s
       timeout: 5s
       retries: 5
