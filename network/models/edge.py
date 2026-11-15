@@ -5,6 +5,11 @@ from network.models.node import Node
 
 
 class Edge(BaseModel):
+    """
+    A directed link from one node to another with a latency.
+    Each source and destination pair is unique.
+    """
+
     source = models.ForeignKey(
         Node, on_delete=models.PROTECT, related_name="outgoing_edges"
     )

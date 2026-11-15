@@ -4,6 +4,10 @@ from network.models.base import BaseModel
 
 
 class Node(BaseModel):
+    """
+    A network node, identified by a unique name.
+    """
+
     name = models.CharField(max_length=100, unique=True)
 
     def __str__(self):

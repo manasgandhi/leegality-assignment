@@ -5,6 +5,10 @@ from network.models import Node, RouteQuery
 
 
 class ShortestRouteSerializer(serializers.ModelSerializer):
+    """
+    Validates a shortest route request. Both nodes must exist.
+    """
+
     source = serializers.SlugRelatedField(
         slug_field="name", queryset=Node.objects.only("name")
     )
@@ -18,6 +22,10 @@ class ShortestRouteSerializer(serializers.ModelSerializer):
 
 
 class RouteQuerySerializer(serializers.ModelSerializer):
+    """
+    Read-only view of a saved route lookup, used by the history list.
+    """
+
     class Meta:
         model = RouteQuery
         fields = ("id", "source", "destination", "total_latency", "path", "created_at")
@@ -25,7 +33,11 @@ class RouteQuerySerializer(serializers.ModelSerializer):
 
 
 class EndOfDayDateTimeField(serializers.DateTimeField):
-    # A plain date such as 2025-01-31 means the whole day, so it covers up to 23:59:59.
+    """
+    A datetime field where a plain date means the whole day.
+    A plain date becomes 23:59:59.999999 of that day.
+    """
+
     def to_internal_value(self, value):
         result = super().to_internal_value(value)
         if parse_date(value) is not None:
@@ -34,6 +46,10 @@ class EndOfDayDateTimeField(serializers.DateTimeField):
 
 
 class RouteHistoryParamsSerializer(serializers.Serializer):
+    """
+    Validates the history query params and maps them to created_at filters.
+    """
+
     source = serializers.CharField(required=False)
     destination = serializers.CharField(required=False)
     date_from = serializers.DateTimeField(source="created_at__gte", required=False)

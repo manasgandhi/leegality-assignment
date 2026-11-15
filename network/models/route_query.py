@@ -4,6 +4,11 @@ from network.models.base import BaseModel
 
 
 class RouteQuery(BaseModel):
+    """
+    A saved shortest route lookup.
+    Node names are stored as text so history survives node deletion.
+    """
+
     source = models.CharField(max_length=100)
     destination = models.CharField(max_length=100)
     total_latency = models.FloatField()

@@ -13,17 +13,27 @@ class NodeViewSet(
     mixins.DestroyModelMixin,
     viewsets.GenericViewSet,
 ):
+    """
+    Create, list and delete nodes. A node with edges cannot be deleted.
+    """
+
     queryset = Node.objects.only("name")
     serializer_class = NodeSerializer
     pagination_class = StandardPagination
     lookup_value_regex = r"\d+"
 
     def list(self, request):
+        """
+        List nodes, paginated.
+        """
         page = self.paginate_queryset(self.get_queryset())
         serializer = self.get_serializer(page, many=True)
         return self.paginator.get_paginated_response(serializer.data, list_name="nodes")
 
     def destroy(self, request, pk=None):
+        """
+        Delete a node, or return 400 if it still has edges.
+        """
         node = get_object_or_json404(Node, pk=pk)
         if node.outgoing_edges.exists() or node.incoming_edges.exists():
             return custom_error("Node has edges, delete them first")

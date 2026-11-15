@@ -5,10 +5,15 @@ from network.models import Edge, Node
 
 
 def shortest_path(source, destination):
+    """
+    Return (total_latency, path) of the cheapest route, or None if no route.
+    The same source and destination gives (0.0, [source]).
+    """
     if source == destination:
         return 0.0, [source]
 
-    # Fail fast in one query: nothing leaves the source or nothing enters the destination.
+    # Fail fast in one query: nothing leaves the source or nothing enters the
+    # destination.
     has_out, has_in = (
         Node.objects.filter(name=source)
         .annotate(
