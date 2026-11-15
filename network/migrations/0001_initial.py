@@ -5,55 +5,71 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Node',
+            name="Node",
             fields=[
-                ('id', models.BigAutoField(primary_key=True, serialize=False)),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('modified_at', models.DateTimeField(auto_now=True)),
-                ('name', models.CharField(max_length=100, unique=True)),
+                ("id", models.BigAutoField(primary_key=True, serialize=False)),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("modified_at", models.DateTimeField(auto_now=True)),
+                ("name", models.CharField(max_length=100, unique=True)),
             ],
             options={
-                'ordering': ['id'],
-                'abstract': False,
+                "ordering": ["id"],
+                "abstract": False,
             },
         ),
         migrations.CreateModel(
-            name='RouteQuery',
+            name="RouteQuery",
             fields=[
-                ('id', models.BigAutoField(primary_key=True, serialize=False)),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('modified_at', models.DateTimeField(auto_now=True)),
-                ('source', models.CharField(max_length=100)),
-                ('destination', models.CharField(max_length=100)),
-                ('total_latency', models.FloatField()),
-                ('path', models.JSONField()),
+                ("id", models.BigAutoField(primary_key=True, serialize=False)),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("modified_at", models.DateTimeField(auto_now=True)),
+                ("source", models.CharField(max_length=100)),
+                ("destination", models.CharField(max_length=100)),
+                ("total_latency", models.FloatField()),
+                ("path", models.JSONField()),
             ],
             options={
-                'ordering': ['-id'],
+                "ordering": ["-id"],
             },
         ),
         migrations.CreateModel(
-            name='Edge',
+            name="Edge",
             fields=[
-                ('id', models.BigAutoField(primary_key=True, serialize=False)),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('modified_at', models.DateTimeField(auto_now=True)),
-                ('latency', models.FloatField()),
-                ('destination', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='incoming_edges', to='network.node')),
-                ('source', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='outgoing_edges', to='network.node')),
+                ("id", models.BigAutoField(primary_key=True, serialize=False)),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("modified_at", models.DateTimeField(auto_now=True)),
+                ("latency", models.FloatField()),
+                (
+                    "destination",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="incoming_edges",
+                        to="network.node",
+                    ),
+                ),
+                (
+                    "source",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="outgoing_edges",
+                        to="network.node",
+                    ),
+                ),
             ],
             options={
-                'ordering': ['id'],
-                'abstract': False,
-                'constraints': [models.UniqueConstraint(fields=('source', 'destination'), name='unique_edge')],
+                "ordering": ["id"],
+                "abstract": False,
+                "constraints": [
+                    models.UniqueConstraint(
+                        fields=("source", "destination"), name="unique_edge"
+                    )
+                ],
             },
         ),
     ]
